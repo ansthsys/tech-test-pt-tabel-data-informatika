@@ -2,6 +2,8 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -16,3 +18,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('products', 'ProductController@index');
+$router->post('products', 'ProductController@store');
+$router->put('products/{id}', 'ProductController@update');
+$router->delete('products/{id}', 'ProductController@destroy');
