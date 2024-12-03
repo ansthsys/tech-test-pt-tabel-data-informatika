@@ -17,6 +17,10 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->post('login', 'AuthController@login');
+$router->post('register', 'AuthController@register');
+$router->get('profile', 'AuthController@profile');
+
 $router->get('products', 'ProductController@index');
 $router->post('products', 'ProductController@store');
 $router->put('products/{id}', 'ProductController@update');
