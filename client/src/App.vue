@@ -1,4 +1,5 @@
 <script setup>
+import { Toaster } from "@steveyuowo/vue-hot-toast";
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
@@ -37,4 +38,5 @@ import { RouterLink, RouterView } from "vue-router";
   </div>
 
   <RouterView />
+  <Toaster />
 </template>
