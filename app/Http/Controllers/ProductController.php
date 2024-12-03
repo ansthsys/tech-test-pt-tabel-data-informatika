@@ -57,7 +57,7 @@ class ProductController extends Controller
             return response()->json([
                 "error" => true,
                 "message" => "id not found"
-            ]);
+            ], 404);
         }
 
         $this->validate($request, [
@@ -87,7 +87,7 @@ class ProductController extends Controller
             return response()->json([
                 "error" => true,
                 "message" => "id not found"
-            ]);
+            ], 404);
         }
 
         $product->delete();
