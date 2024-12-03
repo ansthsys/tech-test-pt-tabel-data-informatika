@@ -15,10 +15,14 @@ import { RouterLink, RouterView } from "vue-router";
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3"
         >
           <li>
-            <RouterLink :to="{ name: 'product.index' }" activeClass="active">Product</RouterLink>
+            <RouterLink :to="{ name: 'product.index' }" activeClass="active">
+              Product
+            </RouterLink>
           </li>
           <li>
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink :to="{ name: 'order.index' }" activeClass="active">
+              Order
+            </RouterLink>
           </li>
         </ul>
       </div>
@@ -28,10 +32,14 @@ import { RouterLink, RouterView } from "vue-router";
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal px-1 gap-3">
         <li>
-          <RouterLink :to="{ name: 'product.index' }" activeClass="active">Product</RouterLink>
+          <RouterLink :to="{ name: 'product.index' }" activeClass="active">
+            Product
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink :to="{ name: 'order.index' }" activeClass="active">
+            Home
+          </RouterLink>
         </li>
       </ul>
     </div>
